@@ -1,1 +1,1 @@
-# inklynx.github.io
+# inkandlynx.github.io
