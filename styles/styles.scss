@@ -92,6 +92,10 @@ h1 {
         background-color: $secondary;
         padding: 2rem;
 
+        p {
+            margin: 0;
+        }
+
         &.primary {
             background-color: $primary;
 

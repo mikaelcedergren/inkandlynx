@@ -143,6 +143,9 @@ h1.decoration::after {
   background-color: #1B1B1B;
   padding: 2rem;
 }
+.boxes .box p {
+  margin: 0;
+}
 .boxes .box.primary {
   background-color: #E9204F;
 }
