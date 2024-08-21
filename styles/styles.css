@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 /* COLORS */
 /* GRAYSCALE */
 /* OTHER */
@@ -13,15 +13,20 @@ body {
   padding: 0;
 }
 
-section > div {
+section .section-content {
   margin: 0 auto;
   max-width: 920px;
   padding: 6rem 0;
+  width: 100%;
 }
 
 button {
   font-size: 1rem;
   height: 54px;
+}
+
+h1 {
+  letter-spacing: -0.1rem;
 }
 
 h1,
@@ -30,6 +35,7 @@ h3,
 h4,
 p {
   margin: 0;
+  width: 100%;
 }
 
 a {
@@ -46,7 +52,7 @@ a {
 body {
   background: black;
   color: #ddd;
-  font-family: "Plus Jakarta Sans";
+  font-family: "Work Sans";
 }
 
 nav img {
@@ -76,10 +82,10 @@ header h1 {
   left: 50%;
   top: 40%;
   transform: translateX(-50%) translateY(-50%);
-  max-width: 600px;
+  max-width: 960px;
   z-index: 1;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 header .darken-video {
   content: "";
@@ -92,14 +98,16 @@ header .darken-video {
 }
 
 .boxes {
+  max-width: 960px;
+  margin: 0 auto;
   position: relative;
-  top: -12rem;
+  top: -6rem;
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
   flex-flow: row nowrap;
   gap: 1rem;
-  margin: 0 auto;
+  width: 100%;
 }
 .boxes .box {
   display: flex;
@@ -107,6 +115,18 @@ header .darken-video {
   justify-content: flex-start;
   flex-flow: column nowrap;
   gap: 0.5rem;
-  background-color: pink;
-  padding: 1rem;
+  flex: 1 1 33.3333%;
+  background-color: #1B1B1B;
+  padding: 2rem;
+}
+.boxes .box.primary {
+  background-color: #E9204F;
+}
+.boxes .box.primary .material-icons {
+  color: #ddd;
+}
+.boxes .box .material-icons {
+  color: #E9204F;
+  font-size: 48px;
+  margin-bottom: 1rem;
 }

@@ -4,16 +4,17 @@
 
 html,
 body {
-  font-size: 18px;
+  font-size: $font-size;
   margin: 0;
   padding: 0;
 }
 
 section {
-  & > div {
+  & .section-content {
     margin: 0 auto;
     max-width: 920px;
     padding: 6rem 0;
+    width: 100%;
   }
 }
 
@@ -22,12 +23,17 @@ button {
   height: 54px;
 }
 
+h1 {
+  letter-spacing: -0.10rem;
+}
+
 h1,
 h2,
 h3,
 h4,
 p {
   margin: 0;
+  width: 100%;
 }
 
 a {

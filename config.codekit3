@@ -108,6 +108,18 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/styles\/normalize.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/styles\/normalize.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/styles\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -135,28 +147,12 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/videos\/backup-header-video.mp4" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/videos\/backup-header-video.mp4",
-      "oF" : 0
-    },
     "\/videos\/dark-header-video.mp4" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/videos\/dark-header-video.mp4",
-      "oF" : 0
-    },
-    "\/videos\/header-video.mp4" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/videos\/header-video.mp4",
       "oF" : 0
     }
   },
