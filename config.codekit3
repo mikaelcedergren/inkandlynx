@@ -43,6 +43,45 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/images\/portait-lindahl.jpg" : {
+      "ft" : 16384,
+      "iS" : 48548,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/portait-lindahl.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/portrait-ben.jpg" : {
+      "ft" : 16384,
+      "iS" : 44118,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/portrait-ben.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/portrait-mikael.jpg" : {
+      "ft" : 16384,
+      "iS" : 57845,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/portrait-mikael.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -161,6 +200,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/videos\/dark-header-video.mp4",
+      "oF" : 0
+    },
+    "\/videos\/header-video-man.mp4" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/videos\/header-video-man.mp4",
+      "oF" : 0
+    },
+    "\/videos\/header-video-paint.mp4" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/videos\/header-video-paint.mp4",
       "oF" : 0
     }
   },
