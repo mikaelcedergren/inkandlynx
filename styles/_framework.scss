@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  line-height: 1.5;
 }
 
 html,
@@ -13,7 +14,7 @@ section {
   & .section-content {
     margin: 0 auto;
     max-width: 920px;
-    padding: 6rem 0;
+    padding: 4rem 0;
     width: 100%;
   }
 }
@@ -23,10 +24,6 @@ button {
   height: 54px;
 }
 
-h1 {
-  letter-spacing: -0.10rem;
-}
-
 h1,
 h2,
 h3,
@@ -34,10 +31,27 @@ h4,
 p {
   margin: 0;
   width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  letter-spacing: -0.10rem;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 a {
-  color: #000;
+  color: $primary;
 }
 
 .grid-row {

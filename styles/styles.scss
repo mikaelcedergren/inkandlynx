@@ -56,6 +56,20 @@ header {
     }
 }
 
+h1 {
+    &.decoration {
+        &::after {
+            content: '';
+            display: block;
+            width: 48px;
+            height: 2px;
+            background-color: $primary;
+            position: relative;
+            bottom: -1rem;
+        }
+    }
+}
+
 .boxes {
     max-width: $page-max-width;
     margin: 0 auto;
@@ -91,5 +105,20 @@ header {
             font-size: 48px;
             margin-bottom: 1rem;
         }
+    }
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 1rem;
+    width: 100%;
+    
+    .service {
+        flex: 1 1 32%;
+        padding: 1rem;
+        background-color: $secondary;
     }
 }
