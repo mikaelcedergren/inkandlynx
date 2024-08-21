@@ -293,15 +293,6 @@ header h1 {
 header h1 span {
   color: #E9204F;
 }
-header .darken-video {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
 
 h1.decoration::after {
   content: "";
