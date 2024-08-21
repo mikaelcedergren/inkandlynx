@@ -28,7 +28,8 @@ header {
     
     video {
         position: inherit;
-        min-width: 100%;
+        pointer-events: none;
+        width: 100%;
         overflow: hidden;
         z-index: -1;
         object-fit: cover;
