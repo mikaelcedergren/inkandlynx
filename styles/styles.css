@@ -282,7 +282,7 @@ nav img {
   top: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 150px;
+  max-width: 200px;
 }
 
 header {
@@ -290,6 +290,11 @@ header {
   height: 75vh;
   overflow: hidden;
   position: relative;
+}
+@media (max-width: 720px) {
+  header {
+    height: 50vh;
+  }
 }
 header video {
   position: inherit;
@@ -299,10 +304,15 @@ header video {
   z-index: -1;
   object-fit: cover;
 }
+@media (max-width: 720px) {
+  header video {
+    object-fit: none;
+  }
+}
 header h1 {
   position: absolute;
   left: 50%;
-  top: 60%;
+  top: 50%;
   transform: translateX(-50%) translateY(-50%);
   max-width: 960px;
   z-index: 1;
@@ -382,9 +392,10 @@ h1.decoration::after {
   width: 100%;
 }
 .services .service {
-  flex: 1 1 32%;
+  flex: 1 1 282px;
   padding: 1rem;
   background-color: #1B1B1B;
+  text-align: left;
 }
 
 .portrait {

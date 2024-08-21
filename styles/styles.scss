@@ -16,7 +16,7 @@ nav {
         top: 1rem;
         left: 50%;
         transform: translateX(-50%);
-        max-width: 150px;
+        max-width: 200px;
     }
 }
 
@@ -25,6 +25,10 @@ header {
     height: 75vh;
     overflow: hidden;
     position: relative;
+
+    @media (max-width: $breakpoint-small) {
+        height: 50vh;
+    }
     
     video {
         position: inherit;
@@ -33,12 +37,16 @@ header {
         overflow: hidden;
         z-index: -1;
         object-fit: cover;
+
+        @media (max-width: $breakpoint-small) {
+            object-fit: none;
+        }
     }
 
     h1 {
         position: absolute;
         left: 50%;
-        top: 60%;
+        top: 50%;
         transform: translateX(-50%) translateY(-50%);
         max-width: $page-max-width;
         z-index: 1;
@@ -127,9 +135,10 @@ h1 {
     width: 100%;
     
     .service {
-        flex: 1 1 32%;
+        flex: 1 1 282px;
         padding: 1rem;
         background-color: $secondary;
+        text-align: left;
     }
 }
 
