@@ -148,3 +148,19 @@ h1 {
     object-fit: cover;
     border-radius: 100%;
 }
+
+.image-separator {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-flow: row nowrap;
+    gap: 0;
+    margin: 2rem 0;
+    
+    img {
+        flex: 1 1 auto;
+        width: 33vw;
+        object-fit: cover;
+    }
+}
