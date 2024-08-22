@@ -293,7 +293,7 @@ header {
 }
 @media (max-width: 720px) {
   header {
-    height: 50vh;
+    height: 60vh;
   }
 }
 header video {
