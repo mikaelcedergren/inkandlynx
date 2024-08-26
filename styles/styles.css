@@ -83,7 +83,7 @@ footer {
   align-items: center;
   justify-content: center;
   flex-flow: row nowrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 .grid-row .grid-column {
   flex: auto;
@@ -351,6 +351,7 @@ h1.decoration::after {
   flex-flow: row nowrap;
   gap: 1rem;
   width: 100%;
+  padding: 0 2rem;
 }
 @media (max-width: 720px) {
   .boxes {
@@ -403,6 +404,11 @@ h1.decoration::after {
   width: 128px;
   object-fit: cover;
   border-radius: 100%;
+}
+
+.section-image {
+  max-width: 100%;
+  border-radius: 1rem;
 }
 
 .image-separator {

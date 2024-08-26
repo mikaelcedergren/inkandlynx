@@ -33,6 +33,19 @@
       "oAP" : "\/components\/_header.html",
       "oF" : 0
     },
+    "\/images\/embracing-ai.jpg" : {
+      "ft" : 16384,
+      "iS" : 207964,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/embracing-ai.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/logo-light.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -114,6 +127,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/images\/portrait-mikael.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/portrait-noel.jpg" : {
+      "ft" : 16384,
+      "iS" : 66158,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/portrait-noel.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
