@@ -15,11 +15,20 @@ body {
   max-width: 100%;
 }
 
-section .section-content {
+section section-content {
+  display: block;
   margin: 0 auto;
   max-width: 920px;
   padding: 4rem 1rem;
   width: 100%;
+}
+@media (max-width: 720px) {
+  section section-content {
+    padding: 1rem;
+  }
+}
+section section-content[center] {
+  text-align: center;
 }
 
 button {
@@ -74,22 +83,38 @@ img {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  gap: 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 2rem;
+  padding: 1rem;
+}
+@media (max-width: 720px) {
+  footer {
+    flex-flow: column nowrap;
+  }
+}
+footer img {
+  max-width: 80px;
 }
 
-.grid-row {
+grid-row {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row nowrap;
   gap: 2rem;
 }
-.grid-row .grid-column {
+grid-row grid-column {
   flex: auto;
 }
+grid-row grid-column[center] {
+  text-align: center;
+}
 @media (max-width: 720px) {
-  .grid-row {
+  grid-row {
     flex-flow: column nowrap;
   }
 }
@@ -282,7 +307,7 @@ nav img {
   top: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 200px;
+  max-width: 160px;
 }
 
 header {
