@@ -12,20 +12,11 @@ body {
 }
 
 section {
-  section-content {
-    display: block;
+  & .section-content {
     margin: 0 auto;
     max-width: 920px;
     padding: 4rem 1rem;
     width: 100%;
-
-    @media (max-width: $breakpoint-small) {
-      padding: 1rem;
-    }
-
-    &[center] {
-      text-align: center;
-    }
   }
 }
 
@@ -82,36 +73,19 @@ img {
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-flow: row nowrap;
-  gap: 1rem;
   border-top: $line;
-  padding: 1rem;
-
-  @media (max-width: $breakpoint-small) {
-    flex-flow: column nowrap;
-  }
-
-  img {
-    max-width: 80px;
-  }
+  padding: 2rem;
 }
 
-grid-row {
+.grid-row {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row nowrap;
   gap: 2rem;
 
-  grid-column {
+  .grid-column {
     flex: auto;
-
-    &[center] {
-      text-align: center;
-    }
   }
 
   @media (max-width: $breakpoint-small) {
