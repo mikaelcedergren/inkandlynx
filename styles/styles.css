@@ -306,6 +306,15 @@ header {
   overflow: hidden;
   position: relative;
 }
+header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
 @media (max-width: 720px) {
   header {
     height: 340px;

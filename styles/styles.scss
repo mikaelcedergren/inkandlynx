@@ -90,7 +90,7 @@ footer {
   flex-flow: row nowrap;
   gap: 1rem;
   margin-top: 2rem;
-  
+
   img {
     max-width: 100px;
   }
@@ -155,175 +155,184 @@ footer {
   }
 }
 
-
 body {
-    background: black;
-    color: $white;
-    font-family: "Work Sans";
+  background: black;
+  color: $white;
+  font-family: 'Work Sans';
 }
 
 nav {
-    img {
-        position: absolute;
-        z-index: 1;
-        top: 1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 160px;
-    }
+  img {
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 160px;
+  }
 }
 
 header {
-    width: 100%;
-    height: 450px;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+  }
 
   @media (max-width: $breakpoint-small) {
     height: 340px;
   }
-    
-    video {
-        position: inherit;
-        pointer-events: none;
-        width: 100%;
-        overflow: hidden;
-        z-index: -1;
-        object-fit: cover;
 
-        @media (max-width: $breakpoint-small) {
-            object-fit: contain;
-        }
+  video {
+    position: inherit;
+    pointer-events: none;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    object-fit: cover;
+
+    @media (max-width: $breakpoint-small) {
+      object-fit: contain;
+    }
+  }
+
+  h1 {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    max-width: $page-max-width;
+    z-index: 1;
+    text-align: center;
+    font-size: 4rem;
+    padding: 0 1rem;
+
+    span {
+      color: $primary;
     }
 
-    h1 {
-        position: absolute;
-        left: 50%;
-        bottom: 10%;
-        transform: translateX(-50%);
-        max-width: $page-max-width;
-        z-index: 1;
-        text-align: center;
-        font-size: 4rem;
-        padding: 0 1rem;
-
-        span {
-            color: $primary;
-        }
-
-        @media (max-width: $breakpoint-small) {
-            font-size: 2.5rem;
-        }
+    @media (max-width: $breakpoint-small) {
+      font-size: 2.5rem;
     }
+  }
 }
 
 h1 {
-    &.decoration {
-        &::after {
-            content: '';
-            display: block;
-            width: 48px;
-            height: 2px;
-            background-color: $primary;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: -1rem;
-        }
+  &.decoration {
+    &::after {
+      content: '';
+      display: block;
+      width: 48px;
+      height: 2px;
+      background-color: $primary;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -1rem;
     }
+  }
 }
 
 .boxes {
-    max-width: $page-max-width;
-    margin: 0 auto 4rem auto;
+  max-width: $page-max-width;
+  margin: 0 auto 4rem auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  width: 100%;
+  padding: 0 2rem;
+
+  @media (max-width: $breakpoint-small) {
+    flex-flow: column nowrap;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .box {
     display: flex;
-    align-items: stretch;
+    align-items: flex-start;
     justify-content: flex-start;
-    flex-flow: row nowrap;
-    gap: 1rem;
-    width: 100%;
-    padding: 0 2rem;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    flex: 1 1 33.3333%;
+    background-color: $secondary;
+    padding: 2rem;
 
     @media (max-width: $breakpoint-small) {
-        flex-flow: column nowrap;
-        padding: 0 1rem;
-        margin-bottom: 2rem;
+      padding: 1rem;
     }
-    
-    .box {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-flow: column nowrap;
-        gap: 0.5rem;
-        flex: 1 1 33.3333%;
-        background-color: $secondary;
-        padding: 2rem;
 
-        @media (max-width: $breakpoint-small) {
-          padding: 1rem;
-        }
-
-        p {
-            margin: 0;
-        }
-
-        &.primary {
-            background-color: $primary;
-
-            .material-icons {
-                color: $white;
-            }
-        }
-
-        .material-icons {
-            color: $primary;
-            font-size: 48px;
-            margin-bottom: 1rem;
-        }
+    p {
+      margin: 0;
     }
+
+    &.primary {
+      background-color: $primary;
+
+      .material-icons {
+        color: $white;
+      }
+    }
+
+    .material-icons {
+      color: $primary;
+      font-size: 48px;
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 .services {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-    gap: 1rem;
-    width: 100%;
-    
-    .service {
-        flex: 1 1 282px;
-        padding: 1rem;
-        background-color: $secondary;
-        text-align: left;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 1rem;
+  width: 100%;
+
+  .service {
+    flex: 1 1 282px;
+    padding: 1rem;
+    background-color: $secondary;
+    text-align: left;
+  }
 }
 
 .portrait {
-    height: 128px;
-    width: 128px;
-    object-fit: cover;
-    border-radius: 100%;
+  height: 128px;
+  width: 128px;
+  object-fit: cover;
+  border-radius: 100%;
 }
 
 .section-image {
-    max-width: 100%;
-    border-radius: 1rem;
+  max-width: 100%;
+  border-radius: 1rem;
 }
 
 .image-separator {
-    width: 100%;
-    display: flex;
-    align-items: stretch;
-    justify-content: stretch;
-    flex-flow: row nowrap;
-    gap: 0;
-    margin: 2rem 0;
-    
-    img {
-        flex: 1 1 auto;
-        width: 33vw;
-        object-fit: cover;
-    }
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  flex-flow: row nowrap;
+  gap: 0;
+  margin: 2rem 0;
+
+  img {
+    flex: 1 1 auto;
+    width: 33vw;
+    object-fit: cover;
+  }
 }
